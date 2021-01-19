@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_meals/dummy_data.dart';
 
 class CategoryMealsScreen extends StatelessWidget {
-  static const routeName = '';
+  static const routeName = '/category-meals';
   //final String categoryId;
   //final String categoryTitle;
 
@@ -20,8 +21,11 @@ class CategoryMealsScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(categoryTitle),
       ),
-      body: Center(
-        child: Text('The Recipes For The Category!'),
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          return null;
+        },
+        itemCount: DUMMY_MEALS.length,
       ),
     );
   }
