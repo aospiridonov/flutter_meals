@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
       },
       onGenerateRoute: (settings) {
         print(settings.arguments);
+        return null;
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
